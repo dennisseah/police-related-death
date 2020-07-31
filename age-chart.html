@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="styles.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+</head>
+
+<body>
+  <div id="chart" style="position:relative; width:500px; height: 1500px"></div>
+  <script>
+    function plotChart(labels, counts) {
+      var canvas = document.createElement('canvas');
+      document.getElementById("chart").appendChild(canvas);
+      var cxt = canvas.getContext('2d');
+      var myChart = new Chart(cxt, {
+        type: 'horizontalBar',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: "age",
+              backgroundColor: "#367dc4",
+              borderWidth: 0,
+              data: counts,
+              fontColor: 'rgb(255, 255, 255)',
+            }]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Death Count bBy Age',
+          },
+          legend: {
+            display: false
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+        }
+      });
+    }
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET', 'data/age.json');
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        var data = JSON.parse(xhr.response);
+        var labels = [];
+        var counts = []
+        data.forEach(d => {
+          labels.push(d.age);
+          counts.push(d.count);
+        });
+        plotChart(labels, counts);
+      } else {
+        alert('Request failed.  Returned status of ' + xhr.status);
+      }
+    };
+    xhr.send(null);
+  </script>
+</body>
+
+</html>

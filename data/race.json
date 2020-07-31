@@ -1,0 +1,30 @@
+[
+    {
+        "race": "African-American/Black",
+        "count": 6050
+    },
+    {
+        "race": "Asian/Pacific Islander",
+        "count": 432
+    },
+    {
+        "race": "European-American/White",
+        "count": 9174
+    },
+    {
+        "race": "Hispanic/Latino",
+        "count": 3662
+    },
+    {
+        "race": "Middle Eastern",
+        "count": 48
+    },
+    {
+        "race": "Native American/Alaskan",
+        "count": 282
+    },
+    {
+        "race": "Race unspecified",
+        "count": 8786
+    }
+]

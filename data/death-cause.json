@@ -1,0 +1,54 @@
+[
+    {
+        "cause_death": "Asphyxiated\/Restrained",
+        "count": 277
+    },
+    {
+        "cause_death": "Beaten\/Bludgeoned with instrument",
+        "count": 174
+    },
+    {
+        "cause_death": "Burned\/Smoke inhalation",
+        "count": 37
+    },
+    {
+        "cause_death": "Chemical agent\/Pepper spray",
+        "count": 35
+    },
+    {
+        "cause_death": "Drowned",
+        "count": 174
+    },
+    {
+        "cause_death": "Drug overdose",
+        "count": 177
+    },
+    {
+        "cause_death": "Fell from a height",
+        "count": 74
+    },
+    {
+        "cause_death": "Gunshot",
+        "count": 20167
+    },
+    {
+        "cause_death": "Medical emergency",
+        "count": 381
+    },
+    {
+        "cause_death": "Other/Undetermined",
+        "count": 159
+    },
+    {
+        "cause_death": "Stabbed",
+        "count": 47
+    },
+    {
+        "cause_death": "Tasered",
+        "count": 909
+    },
+    {
+        "cause_death": "Vehicle",
+        "count": 5823
+    }
+]

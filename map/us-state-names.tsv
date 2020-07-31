@@ -1,0 +1,61 @@
+id	code	name	population
+1	AL	Alabama	4,908,620
+2	AK	Alaska	734,002
+4	AZ	Arizona	7,378,490
+5	AR	Arkansas	3,039,000
+6	CA	California	39,937,500
+8	CO	Colorado	5,845,530
+9	CT	Connecticut	3,563,080
+10	DE	Delaware	982,895
+11	DC	District of Columbia	720,687
+12	FL	Florida	21,993,000
+13	GA	Georgia	10,736,100
+15	HI	Hawaii	1,412,690
+16	ID	Idaho	1,826,160
+17	IL	Illinois	12,659,700
+18	IN	Indiana	6,745,350
+19	IA	Iowa	3,179,850
+20	KS	Kansas	2,910,360
+21	KY	Kentucky	4,499,690
+22	LA	Louisiana	4,645,180
+23	ME	Maine	1,345,790
+24	MD	Maryland	6,083,120
+25	MA	Massachusetts	6,976,600
+26	MI	Michigan	10,045,000
+27	MN	Minnesota	5,700,670
+28	MS	Mississippi	2,989,260
+29	MO	Missouri	6,169,270
+30	MT	Montana	1,086,760
+31	NE	Nebraska	1,952,570
+32	NV	Nevada	3,139,660
+33	NH	New Hampshire	1,371,250
+34	NJ	New Jersey	8,936,570
+35	NM	New Mexico	2,096,640
+36	NY	New York	19,440,500
+37	NC	North Carolina	10,611,900
+38	ND	North Dakota	761,723
+39	OH	Ohio	11,747,700
+40	OK	Oklahoma	3,954,820
+41	OR	Oregon	4,301,090
+42	PA	Pennsylvania	12,820,900
+44	RI	Rhode Island	1,056,160
+45	SC	South Carolina	5,210,100
+46	SD	South Dakota	903,027
+47	TN	Tennessee	6,897,580
+48	TX	Texas	29,472,300
+49	UT	Utah	3,282,120
+50	VT	Vermont	628,061
+51	VA	Virginia	8,626,210
+53	WA	Washington	7,797,100
+54	WV	West Virginia	1,778,070
+55	WI	Wisconsin	5,851,750
+56	WY	Wyoming	567,025
+60	AS	America Samoa	0
+64	FM	Federated States of Micronesia	0
+66	GU	Guam	0
+68	MH	Marshall Islands	0
+69	MP	Northern Mariana Islands	0
+70	PW	Palau	0
+72	PR	Puerto Rico	3,032,160
+74	UM	U.S. Minor Outlying Islands	0
+78	VI	Virgin Islands of the United States	0

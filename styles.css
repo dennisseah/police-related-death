@@ -1,0 +1,26 @@
+
+h2 {
+  color: #fff;
+}
+.graph-svg-component {
+    opacity: 1;
+}
+.states-names {
+  font-family: verdana;
+  font-size: 10px;
+  text-align: center; 
+}
+div.map-tooltip { 
+    position: absolute;     
+    text-align: left;     
+    width: 100px;
+    height: 28px;  
+    padding: 8px;   
+    margin: 4px;
+    color: #FFF;
+    font: 12px sans-serif;    
+    background: #333; 
+    border: 0px;
+    border-radius: 4px;
+    pointer-events: none;     
+}
