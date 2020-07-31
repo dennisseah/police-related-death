@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <div id="chart" style="position:relative; width:800px; height: 800px"></div>
+  <div id="chart" style="position:relative; width:500px; height: 600px"></div>
   <script>
     function plotChart(labels, data) {
       var canvas = document.createElement('canvas');
@@ -20,7 +20,7 @@
         labels,
         datasets: [
         {
-          label: "gender",
+          label: "race",
           data,
           backgroundColor: "#367dc4",
         }]
@@ -29,7 +29,9 @@
           title: {
             display: true,
             text: 'Death Count By Race'
-          }
+          },
+          responsive: true,
+          maintainAspectRatio: false
         }
       });
     }

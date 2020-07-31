@@ -45,6 +45,11 @@ var svg = d3.select('#us_map').append('svg')
 
 var g = svg.append('g');
 
+function cal_score(pop, count) {
+  pop = parseInt(pop.replace(/,/g, ""), 10)
+  return (((1.0  * count)/pop) * 100000).toFixed(2);
+}
+
 d3.json('map/us.json', function(unitedState) {
   var data = topojson.feature(unitedState, unitedState.objects.states).features;
   d3.tsv('map/us-state-names.tsv', function(tsv){
@@ -88,7 +93,7 @@ d3.json('map/us.json', function(unitedState) {
           return path.centroid(d)[1];
       })
       .attr('r', function(d){
-          return counts[d.id]/100;
+          return cal_score(populations[d.id], counts[d.id]) * 25;
       })
       .attr('fill', '#C00')
       .style('opacity', 0.6)
@@ -100,7 +105,7 @@ d3.json('map/us.json', function(unitedState) {
       .enter()
       .append('svg:text')
       .text(function(d) {
-        return counts[d.id];
+        return cal_score(populations[d.id], counts[d.id]);
       })
       .attr('x', function(d) {
           return path.centroid(d)[0];
@@ -115,7 +120,7 @@ d3.json('map/us.json', function(unitedState) {
 }
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'map/data.json');
+xhr.open('GET', 'map/per-year-data.json');
 xhr.onload = function() {
     if (xhr.status === 200) {
         var data = JSON.parse(xhr.response);
